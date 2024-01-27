@@ -2,7 +2,7 @@ package BaiTap;
 
 import java.util.Scanner;
 
-public class Baitap25_String {
+public class BaiTap25_String {
     /*Viết chương trình kiểm tra 1 chuỗi nhập vào từ bàn phím có phải Panlyndrom
     (là chuỗi có đảo ngược cũng bằng chính nó, ví dụ madam, radar …)*/
     public static void main(String[] args) {
