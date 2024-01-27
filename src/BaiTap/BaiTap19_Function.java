@@ -2,7 +2,7 @@ package BaiTap;
 
 import java.util.Scanner;
 
-public class BaiTap19 {
+public class BaiTap19_Function {
 
   public static void main(String[] args) {
     System.out.print("Mời nhập vào số a: ");

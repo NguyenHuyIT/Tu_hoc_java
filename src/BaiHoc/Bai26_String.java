@@ -28,18 +28,18 @@ public class Bai26_String {
 
         //5. IndexOf: Kiểm tra vị trí xuất hiện đầu tiên của ký tự hoặc chuỗi
         // Trả về -1 nếu không  tìm thấy
-        String s5 = "tôi đi tìm tôi";
-        System.out.println(s5.indexOf("tôi"));
+        String s2 = "tôi đi tìm tôi";
+        System.out.println(s2.indexOf("tôi"));
 
         //6. IndexOf: Kiểm tra vị trí xuất hiện cuối cùng của ký tự hoặc chuỗi
         // Trả về -1 nếu không  tìm thấy
-        System.out.println(s5.lastIndexOf("tôi"));
+        System.out.println(s2.lastIndexOf("tôi"));
 
         //7. contains: Kiểm tra chuỗi con
-        String s7 = ".mp3";
-        String s72 = "tuhoc.mp3";
+        String s3 = ".mp3";
+        String s4 = "tuhoc.mp3";
         //Kiểm tra s62 có chứa cụm String của s6 không?
-        boolean check = s72.contains(s7);
+        boolean check = s4.contains(s3);
         if (check) {
             System.out.println("Chuỗi con");
         } else {
@@ -49,59 +49,89 @@ public class Bai26_String {
         //8. Substring: trích lộc chuỗi con từ chuỗi ban đầu
         // Substring(int beginIndex): Trích lộc đầu cuối cùng
         // Substring(int beginIndex, int endIndex): Trích lộc giá trị đầu và giá trị cuối cùng
-        String s8 = "abcdefg";
-        String s81 = s8.substring(2);
-        System.out.println(s8);
-        System.out.println(s81);
-        String s82 = s8.substring(2, 7);
-        System.out.println(s82);
+        String s5 = "abcdefg";
+        String s6 = s5.substring(2);
+        System.out.println(s5);
+        System.out.println(s6);
+        String s7 = s5.substring(2, 7);
+        System.out.println(s7);
 
         //9. replace("str old", "str new"): Thay thế chuỗi
-        String s9 = "tôi đi tìm tôi";
-        String s91 = s9.replace("tôi", "bạn");
+        String s8 = "tôi đi tìm tôi";
+        String s9 = s8.replace("tôi", "bạn");
+        System.out.println(s8);
         System.out.println(s9);
-        System.out.println(s91);
 
         //10. replaceFirst("str old", "str new"): Thay thế đầu tiên
-        String s10 = s9.replaceFirst("tôi", "bạn");
-        System.out.println(s9);
+        String s10 = s8.replaceFirst("tôi", "bạn");
+        System.out.println(s8);
         System.out.println(s10);
 
         //11. trim(): Xóa khoảng trắng\
         String s11 = "                          tôi đi tìm tôi                            ";
-        String s111 = s11.trim();
+        String s12 = s11.trim();
         System.out.println(s11);
-        System.out.println(s111);
+        System.out.println(s12);
 
         //12. trim(): Xóa toàn bộ khoảng trắng ở cuối
         //cách 1: biểu thức chính quy (regular expression)
         //dùng \s+$ để xóa tất cả các khoảng trắng ở cuối chuỗi
-        String s12 = s11.replaceAll("\\s+$", "");
+        String s13 = s11.replaceAll("\\s+$", "");
         System.out.println(s11);
         System.out.println(s11.length());
-        System.out.println(s12);
-        System.out.println(s12.length());
+        System.out.println(s13);
+        System.out.println(s13.length());
 
         //cách 2: Xoá khoảng trắng cuối chuổi bằng vòng lặp
-        String s13 = "                          tôi đi tìm tôi                            ";
-        while(s13.endsWith(" ")) {
-            s13 = s13.substring(0, s13.length() - 1);
+        String s14 = "                          tôi đi tìm tôi                            ";
+        while(s14.endsWith(" ")) {
+            s14 = s14.substring(0, s14.length() - 1);
         }
         System.out.println(s13);
 
         //13. trim(): Xóa toàn bộ khoảng trắng ở đầu
         //cách 1: biểu thức chính quy (regular expression)
         //dùng ^\\s+$ để xóa tất cả các khoảng trắng ở đầu chuỗi
-        String s14 = "                          tôi đi tìm tôi                            ";
-        String s15 =s14.replaceFirst( "^\\s+","");
-        System.out.println(s14);
+        String s15 = "                          tôi đi tìm tôi                            ";
+        String s16 =s15.replaceFirst( "^\\s+","");
         System.out.println(s15);
+        System.out.println(s16);
 
         //cách 2: Xoá khoảng trắng đầu chuổi bằng vòng lặp
-        String s16 = "                          tôi đi tìm tôi                            ";
-        while(s16.startsWith(" ")) {
-            s16 = s16.substring(1);
+        String s17 = "                          tôi đi tìm tôi                            ";
+        while(s17.startsWith(" ")) {
+            s17 = s17.substring(1);
         }
-        System.out.println(s16);
+        System.out.println(s17);
+
+        //14. split(): Tách chuỗi
+        String s18 = "Hello world";
+        String[] arr = s18.split(" ");
+        //duyệt mảng
+        for(int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
+
+        //15. toLowcase() && toUpperCase()
+        String s19 = "Tôi học lập trình tại tuhoc.cc";
+        String s20 = s19.toLowerCase();
+        System.out.println(s20);
+        String s21 = s19.toUpperCase();
+        System.out.println(s21);
+
+        //16. toCharArray(): Tách chuỗi thành từng ký tự, cho vào mảng
+        String s22 = "abcdefg123@";
+        char[] arr2 = s22.toCharArray();
+        for(int i = 0; i < arr2.length; i++) {
+            System.out.println(arr2[i]);
+        }
+
+        //17. reverse(): Đảo nguồi chuỗi
+        String s23 = "abcdefg";
+        //Khai báo đối tượng thuộc class StringBuilder
+        StringBuilder sb = new StringBuilder(s23);
+        sb.reverse();
+        String s24 = sb.toString();
+        System.out.println(s24);
     }
 }
