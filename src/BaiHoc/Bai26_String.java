@@ -129,9 +129,7 @@ public class Bai26_String {
         //17. reverse(): Đảo nguồi chuỗi
         String s23 = "abcdefg";
         //Khai báo đối tượng thuộc class StringBuilder
-        StringBuilder sb = new StringBuilder(s23);
-        sb.reverse();
-        String s24 = sb.toString();
-        System.out.println(s24);
+        String sb = new StringBuilder(s23).reverse().toString();
+        System.out.println(sb);
     }
 }
