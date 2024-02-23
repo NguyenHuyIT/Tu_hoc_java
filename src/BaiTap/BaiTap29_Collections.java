@@ -14,7 +14,6 @@ public class BaiTap29_Collections {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         ArrayList<Integer> lst = new ArrayList<>();
-        Random generator = new Random();
         System.out.print("Mời nhập vào phần tử: ");
         for (int i = 0; i < n; i++) {
             int element = sc.nextInt();
