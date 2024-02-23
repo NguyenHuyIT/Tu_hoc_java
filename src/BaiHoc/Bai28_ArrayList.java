@@ -1,7 +1,6 @@
 package BaiHoc;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -96,5 +95,6 @@ public class Bai28_ArrayList {
             int value = lst14.get(i);
             System.out.println(value);
         }
+
     }
 }
