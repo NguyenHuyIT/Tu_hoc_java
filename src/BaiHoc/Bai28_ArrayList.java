@@ -1,8 +1,11 @@
 package BaiHoc;
 
 import java.util.ArrayList;
+<<<<<<< HEAD
 import java.util.Collection;
 import java.util.Collections;
+=======
+>>>>>>> origin/master
 import java.util.List;
 
 public class Bai28_ArrayList {
@@ -50,6 +53,7 @@ public class Bai28_ArrayList {
         System.out.println("lst6 = " + lst6);
         lst6.set(2,99);
         System.out.println("lst6 sau khi đổi thông tin là: " + lst6);
+<<<<<<< HEAD
 
         //2.7 contains() kiểm tra Collection có chứa phần tử nào đó hay không
         ArrayList<Integer> lst7 = new ArrayList<>(List.of(12, 2, 3, 4, 5, 56));
@@ -96,5 +100,7 @@ public class Bai28_ArrayList {
             int value = lst14.get(i);
             System.out.println(value);
         }
+=======
+>>>>>>> origin/master
     }
 }
