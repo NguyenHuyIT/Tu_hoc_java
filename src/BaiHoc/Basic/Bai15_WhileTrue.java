@@ -1,4 +1,4 @@
-package BaiHoc;
+package BaiHoc.Basic;
 
 public class Bai15_WhileTrue {
 

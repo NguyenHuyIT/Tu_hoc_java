@@ -1,4 +1,4 @@
-package BaiHoc;
+package BaiHoc.Basic;
 
 public class Bai23_Math {
     public static void main(String[] args) {

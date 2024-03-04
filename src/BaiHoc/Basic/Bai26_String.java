@@ -1,4 +1,4 @@
-package BaiHoc;
+package BaiHoc.Basic;
 
 public class Bai26_String {
     public static void main(String[] args) {

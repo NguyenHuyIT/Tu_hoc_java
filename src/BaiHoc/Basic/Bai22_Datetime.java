@@ -1,4 +1,4 @@
-package BaiHoc;
+package BaiHoc.Basic;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
